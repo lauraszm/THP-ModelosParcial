@@ -56,10 +56,11 @@ public class EncuestaPodaA {
 		}
 		
 		System.out.println("Ganador: " + opcionGanadora);
-		System.out.println("Porcentaje de votos negativos: " + porcentajeNo);
-		System.out.println("Promedio edad votantes: " + promedioEdad);
-		
-			
+		if (totalVotos > 0) {			
+			System.out.println("Porcentaje de votos NO: " + porcentajeNo);
+			System.out.println("Promedio edad votantes: " + promedioEdad);
+		}
+	
 		
 		input.close();
 	}
