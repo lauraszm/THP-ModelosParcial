@@ -38,7 +38,7 @@ public class FreddORT {
 				precio = Double.parseDouble(input.nextLine());
 			} while (precio < 0);
 
-			precioFinal = precio + COMISION;
+			precioFinal = precio - COMISION;
 			acumVentas += precioFinal;
 
 			do {
