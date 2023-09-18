@@ -20,15 +20,6 @@ public class Parcial1THP {
 			numActual = Integer.parseInt(input.nextLine());
 			numValidado = numActual >=SALIR && numActual <=MAX;
 		} while (!numValidado);
-		
-		//solo pedimos el segundo numero si el primero no es SALIR
-		if (numActual > SALIR) {			
-			do {			
-				System.out.println("Ingrese un numero de 1 a 100, 0 para salir");
-				numAnterior = Integer.parseInt(input.nextLine());
-				numValidado = numAnterior >=SALIR && numAnterior <=MAX;
-			} while (!numValidado);
-		}
 
 		while (numActual > SALIR) {
 			
